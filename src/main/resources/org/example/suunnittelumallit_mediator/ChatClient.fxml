@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.suunnittelumallit_mediator.ChatClientController">
+    <children>
+        <TextArea fx:id="messageDisplayArea" editable="false" />
+        <TextField fx:id="messageInputField" promptText="Type your message here..." />
+        <ComboBox fx:id="recipientComboBox" promptText="Select recipient" />
+        <Button fx:id="sendButton" text="Send" />
+    </children>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+</VBox>
